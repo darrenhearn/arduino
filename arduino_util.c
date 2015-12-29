@@ -1,3 +1,5 @@
+#include "arduino_util.h"
+
 byte bcdToDec(byte bcd) {
     // The high (leftmost) nibble encodes the 10's digit; the low (rightmost) nibble contains the 1's digit
     return 10*(bcdByte >> 4) + (bcdByte & 0x0f);
