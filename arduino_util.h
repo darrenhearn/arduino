@@ -1,6 +1,8 @@
 #ifndef ARDUINO_UTIL
 #define ARDUINO_UTIL
 
+#include "Arduino.h"
+
 // This is normally part of pins_arduino.h, but doesn't seem to exist in the Codebender environment.
 // Recreating it here, but need to investigate why Codebender doesn't seem to know about it.
 #ifndef digitalPinToInterrupt
