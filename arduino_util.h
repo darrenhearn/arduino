@@ -14,10 +14,10 @@
 // Array bitPos 0 = leftmost bit of array[0]
 // Array bitPos 7 = rightmost bit of array[0]
 // Array bit 8 = leftmost bit of array[1]
-#define SET_BYTE_ARRAY_BIT(array, bitPos) ((array[(bitPos) >> 3]) |= (((byte)1) << (7 - (bitPos) % 8)))
+#define SET_BYTE_ARRAY_BIT(array, bitPos) ((array[(bitPos) >> 3]) |= ((1 << (7 - (bitPos) % 8))))
 
 // Convert a byte between binary-coded decimal (BCD) and decimal representations
-byte bcdToDec(byte bcdByte);
-byte decToBcd(byte decByte);
+uint8_t bcdToDec(uint8_t bcdByte);
+uint8_t decToBcd(uint8_t decByte);
 
 #endif
