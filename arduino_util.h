@@ -1,7 +1,7 @@
 #ifndef ARDUINO_UTIL
 #define ARDUINO_UTIL
 
-// This macro (normally part of pins_arduino.h) doesn't seem to exist in the Codebender environment.
+// This is normally part of pins_arduino.h, but doesn't seem to exist in the Codebender environment.
 // Recreating it here, but need to investigate why Codebender doesn't seem to know about it.
 #ifndef digitalPinToInterrupt
 #define digitalPinToInterrupt(p)  ((p) == 2 ? 0 : ((p) == 3 ? 1 : -1))
